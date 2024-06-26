@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid red;
+    
+}
+/* template grid main container */
+.container{
+    padding: 10px;
+    height: 80vh;
+    width: 100%;
+    display: grid;
+    gap: 10px 20px;
+    grid-template-areas: 
+    'logo logo title title title title title'
+    'menuBar menuBar main main main main widget'
+    'menufooter menufooter footer footer footer footer news'
+}
+.box{
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+/* list of grid area name */
+.logo{
+    grid-area: logo;
+}
+.main{
+    grid-area: main;
+}
+.title{
+    grid-area: title;
+}
+.widget{
+    grid-area: widget;
+}
+.menuBar{
+    grid-area: menuBar;
+}
+.menufooter{
+    grid-area: menufooter;
+}
+.news{
+    grid-area: news;
+}
+.footer{
+    grid-area: footer;
+}
